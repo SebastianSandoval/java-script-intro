@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<title></title>
+	<script type="text/javascript" src="funniest-joke.js"></script>
+</head>
+<body>
+<!-- changing h3 with background colors -->
+<h2 id="fColor" onclick="changeText()" style="background: #ff00ff">
+	Click me!
+</h2>
+<h3>Try a different color!</h3>
+<p>Text Color: <input type="color" id="fTextColor"></p>
+<p>Highlight Color: <input type="color" id="fHighlightColor"></p>
+
+
+<h3>Time to replace!</h3>
+<p id="fText">
+	A good joke ends with a punch line.
+</p>
+<!-- button for <p> change -->
+<button onclick="findReplace()" id="fTruth">Truth</button>
+
+
+<h3>Time to highlight words!</h3>
+<p>Enter Text to filter <input type="text" id="fTextSelect" value="What is going on?"></p>
+<p>The word you want to highlight <input type="text" id="fWordSelect" value="going"></p>
+<p>Highlight color <input type="color" id="fWordColor" value="#ff00ff"></p>
+<p id="fOutput"></p>
+<button onclick="highlightWord()">What does this do?</button>
+
+
+</body>
+</html>
